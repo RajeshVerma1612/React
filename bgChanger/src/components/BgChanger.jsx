@@ -1,17 +1,9 @@
 import React from 'react'
 
-function BgChanger() {
-    let [bg,setBg]=useState("Black")
-    const bgColours=["red","green","blue","purple","yellow","orange","pink","gray"]
-    let rand=(Math.random()*8+9)
-    function change(){
+function BgChanger(props) {
 
-    }
   return (
-    <div>
-      {/* <button onClick={change} className='p-4 border-2 bg-white'>Backgroung Changer</button> */}
-      
-    </div>
+      <button onClick={nextBg} className='p-4 bg-white text-black border-8 border-black rounded font-bold text-xl'>{props.colour}</button>      
   )
 }
 
